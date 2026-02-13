@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, Always 🌸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+    <!-- Floating petals -->
+    <div class="petal-layer" id="petalLayer"></div>
+
+    <div class="page">
+
+        <!-- Header -->
+        <header>
+            <p class="eyebrow">Made just for you ✦</p>
+            <h1 class="hero-name">For <em>Lyka</em></h1>
+            <div class="divider"><span>✿</span></div>
+            <p class="tagline">a little corner of us</p>
+        </header>
+
+        <!-- Gallery Change mo to only for the first load lang to once you click next or prev sa js na lahat yun-->
+        <section class="gallery-section">
+            <div class="gallery-card card">
+                <div class="gallery-img-wrap">
+                    <img src="images/img1.jpg" id="gallery-img" alt="Our memory">
+                    <span class="img-counter" id="img-counter">1 / 8</span>
+                </div>
+                <div class="gallery-info">
+                    <h3>Our moments ❤︎⁠ </h3>
+                    <p id="image-description">Hellooo beautiful, Thank you for coming into my life.</p>
+                    <div class="nav-buttons">
+                        <button class="nav-btn" onclick="prevImg()">← Back</button>
+                        <button class="nav-btn" onclick="nextImg()">Next →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love note -->
+        <section class="note-section">
+            <div class="note-card card">
+                <p class="note-label">a note for you</p>
+                <p class="note-text">
+                    You are my favourite thought on ordinary days,
+                    my calm in every chaos, and the reason
+                    I smile at nothing in particular.
+                    Thank you for just being you.
+                </p>
+                <p class="note-sig">— always yours 🌸</p>
+            </div>
+        </section>
+
+        <!-- Spacer so content clears the fixed player -->
+        <div style="height: 80px;"></div>
+    </div>
+
+    <!-- Fixed music player -->
+    <div class="player-section">
+        <div class="player-pill">
+            <div class="art-dot" id="art-dot">🌸</div>
+            <div class="song-info">
+                <!-- Change mo to to title ng song mo, dl ka mp3 lagay mo sa music folder and name it bgmusic.mp3-->
+                <span class="song-title">Born For You</span>
+                <span class="artist-name">David Pomeranz</span>
+            </div>
+            <audio id="main-audio" src="music/BgMusic.mp3"></audio>
+            <div class="controls">
+                <button id="play-btn">▶</button>
+                <div class="progress-wrap">
+                    <div class="progress-track" id="progress-track">
+                        <div id="progress"></div>
+                    </div>
+                    <span id="time">0:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
