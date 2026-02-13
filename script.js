@@ -9,8 +9,8 @@ const data = [
     { img: "images/img6.jpg", text: "Na ikaw yung nag tatanggal ng pagod ko everytime na down ako." },
     { img: "images/img7.jpg", text: "Ill be dependent on you and i hope na ikaw rin sakin." },
     { img: "images/img8.jpg", text: "Yun laaang hshsh arte ba? next mo naaa hehe." },
-    { img: "images/img9.jpg", text: "I love you so much mahal ♡♡." },
-    { img: "images/img9.jpg", text: "Will you be my Valentines Again?." }
+    { img: "images/img9.gif", text: "I love you so much mahal ♡♡." },
+    { img: "images/img10.jpg", text: "Will you be my Valentines Again?." }
 ];
 
 let currentIndex = 0;
